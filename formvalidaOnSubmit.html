@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Validación</title>
+	<link rel="stylesheet" href="css/mystyle.css">
+	<script src="jQuery/jquery-2.2.4.js"></script>
+	<script src="jQuery/jquery.validate.min.js"></script>
+	<script src="js/valida.js"></script>
+</head>
+
+<body>
+	<main class="container">
+		<form name="form_registro" id="form_registro" method="GET">
+
+			<fieldset>
+				<legend>Registro</legend>
+				<div class="form-group">
+					<label for="nombre" class="etiqueta">Nombre:</label>
+					<input type="text" class="form-control" id="nombre" name="nombre" aria-describedby="infoNombre">
+				</div>
+				<div class="form-group">
+					<label for="apellidos" class="etiqueta">Apellidos:</label>
+					<input type="text" class="form-control" id="apellidos" name="apellidos"
+						aria-describedby="infoApellidos">
+				</div>
+				<div class="form-group">
+					<label for="direccion" class="etiqueta">Dirección:</label>
+					<input type="text" class="form-control" id="direccion" name="direccion"
+						aria-describedby="infoDireccion">
+				</div>
+				<div class="form-group">
+					<label for="localidad" class="etiqueta">Localidad:</label>
+					<input type="text" class="form-control" id="localidad" name="localidad"
+						aria-describedby="infolocalidad">
+				</div>
+				<div class="form-group">
+					<label for="cp" class="etiqueta">Código postal:</label>
+					<input type="text" class="form-control" id="cp" name="cp" aria-describedby="infocp">
+				</div>
+
+				<div class="form-group">
+					<label for="provincia" class="etiqueta">Provincia:</label>
+					<select class="form-control" id="provincia" name="provincia">
+						<option value="">Selecciona una provincia</option>
+						<option>Álava</option>
+						<option>Albacete</option>
+						<option>Alicante/Alacant</option>
+						<option>Almería</option>
+						<option>Asturias</option>
+						<option>Ávila</option>
+						<option>Badajoz</option>
+						<option>Barcelona</option>
+						<option>Burgos</option>
+						<option>Cáceres</option>
+						<option>Cádiz</option>
+						<option>Cantabria</option>
+						<option>Castellón/Castelló</option>
+						<option>Ceuta</option>
+						<option>Ciudad Real</option>
+						<option>Córdoba</option>
+						<option>Cuenca</option>
+						<option>Girona</option>
+						<option>Las Palmas</option>
+						<option>Granada</option>
+						<option>Guadalajara</option>
+						<option>Guipúzcoa</option>
+						<option>Huelva</option>
+						<option>Huesca</option>
+						<option>Illes Balears</option>
+						<option>Jaén</option>
+						<option>A Coruña</option>
+						<option>La Rioja</option>
+						<option>León</option>
+						<option>Lleida</option>
+						<option>Lugo</option>
+						<option>Madrid</option>
+						<option>Málaga</option>
+						<option>Melilla</option>
+						<option>Murcia</option>
+						<option>Navarra</option>
+						<option>Ourense</option>
+						<option>Palencia</option>
+						<option>Pontevedra</option>
+						<option>Salamanca</option>
+						<option>Segovia</option>
+						<option>Sevilla</option>
+						<option>Soria</option>
+						<option>Tarragona</option>
+						<option>Santa Cruz de Tenerife</option>
+						<option>Teruel</option>
+						<option>Toledo</option>
+						<option>Valencia/Valéncia</option>
+						<option>Valladolid</option>
+						<option>Vizcaya</option>
+						<option>Zamora</option>
+						<option>Zaragoza</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<label for="telefono" class="etiqueta">Teléfono:</label>
+					<input type="text" class="form-control" id="telefono" name="telefono"
+						aria-describedby="infotelefono">
+				</div>
+				<div class="form-group">
+					<label for="email" class="etiqueta">Correo electrónico:</label>
+					<input type="text" class="form-control" id="email" name="email" aria-describedby="infoemail">
+				</div>
+				<div class="form-group">
+					<label for="password" class="etiqueta">Password:</label>
+					<input type="text" class="form-control" id="password" name="password"
+						aria-describedby="infopassword">
+				</div>
+				<div class="form-group">
+					<label for="password" class="etiqueta">Confirmar password:</label>
+					<input type="text" class="form-control" id="confirma_password" name="confirma_password"
+						aria-describedby="infopassword">
+				</div>
+				<div class="form-group form-check">
+					<div class="condiciones">
+						<input type="checkbox" class="form-check-input" id="acepto" name="acepto">
+						<label class="form-check-label" for="acepto">Acepto las condiciones del formulario</label>
+					</div>
+				</div>
+				<div class="botones">
+					<button type="reset" class="borrar" name="borrar">Limpiar</button>
+					<button type="submit" name="submit" id="submit" class="enviar">Enviar</button>
+				</div>
+			</fieldset>
+		</form>
+	</main>
+	<script type="text/javascript" src="js/validador.js"></script>
+
+</body>
+
+</html>
